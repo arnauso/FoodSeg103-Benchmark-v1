@@ -1,6 +1,6 @@
 #Added by me, obtaining the meta.json folder of FoodSeg103 with information of all the classes
 import json
-with open('/kaggle/input/FoodSeg103/meta.json', 'r') as f:
+with open('/kaggle/input/foodseg103/FoodSeg103/meta.json', 'r') as f:
     meta_data = json.load(f)
 class_names = [cls["title"] for cls in meta_data["classes"]]
 
@@ -82,7 +82,7 @@ model = dict(
 train_cfg = dict()
 test_cfg = dict(mode='slide', crop_size=(768, 768), stride=(512, 512))
 dataset_type = 'CustomDataset'
-data_root = '/kaggle/input/foodseg103/Images'
+data_root = '/kaggle/input/foodseg103/FoodSeg103/Images'
 
 img_norm_cfg = dict(
     mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
@@ -126,7 +126,7 @@ data = dict(
     workers_per_gpu=2,
     train=dict(
         type='CustomDataset',
-        data_root='/kaggle/input/foodseg103/Images',
+        data_root='/kaggle/input/foodseg103/FoodSeg103/Images',
         img_dir='img_dir/train',
         ann_dir='ann_dir/train',
         classes = class_names,
@@ -149,9 +149,10 @@ data = dict(
         ]),
     val=dict(
         type='CustomDataset',
-        data_root='/kaggle/input/foodseg103/Images',
+        data_root='/kaggle/input/foodseg103/FoodSeg103/Images',
         img_dir='img_dir/test',
         ann_dir='ann_dir/test',
+        classes = class_names,
         pipeline=[
             dict(type='LoadImageFromFile'),
             dict(
@@ -172,9 +173,10 @@ data = dict(
         ]),
     test=dict(
         type='CustomDataset',
-        data_root='/kaggle/input/foodseg103/Images',
+        data_root='/kaggle/input/foodseg103/FoodSeg103/Images',
         img_dir='img_dir/test',
         ann_dir='ann_dir/test',
+        classes = class_names,
         pipeline=[
             dict(type='LoadImageFromFile'),
             dict(
