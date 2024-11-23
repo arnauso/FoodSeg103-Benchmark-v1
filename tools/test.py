@@ -11,6 +11,9 @@ from mmseg.apis import multi_gpu_test, single_gpu_test
 from mmseg.datasets import build_dataloader, build_dataset
 from mmseg.models import build_segmentor
 
+#Import by me
+from mmseg.datasets import CustomDataset
+
 
 def parse_args():
     parser = argparse.ArgumentParser(
