@@ -19,7 +19,7 @@ model = dict(
         #num_classes=104,
         drop_rate=0.0,
         norm_cfg=dict(type='SyncBN', requires_grad=True),
-        pos_embed_interp=True,
+        #pos_embed_interp=True,
         align_corners=False),
     decode_head=dict(
         type='VisionTransformerUpHead',
