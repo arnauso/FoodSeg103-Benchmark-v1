@@ -20,7 +20,7 @@ model = dict(
         drop_rate=0.0,
         norm_cfg=dict(type='SyncBN', requires_grad=True),
         #pos_embed_interp=True,
-        align_corners=False),
+        #align_corners=False),
     decode_head=dict(
         type='VisionTransformerUpHead',
         in_channels=768,
@@ -32,7 +32,7 @@ model = dict(
         norm_cfg=dict(type='SyncBN', requires_grad=True),
         num_conv=2,
         upsampling_method='bilinear',
-        align_corners=False,
+        #align_corners=False,
         loss_decode=dict(
             type='CrossEntropyLoss', use_sigmoid=False, loss_weight=1.0)),
     auxiliary_head=[
@@ -47,7 +47,7 @@ model = dict(
             norm_cfg=dict(type='SyncBN', requires_grad=True),
             num_conv=2,
             upsampling_method='bilinear',
-            align_corners=False,
+            #align_corners=False,
             loss_decode=dict(
                 type='CrossEntropyLoss', use_sigmoid=False, loss_weight=0.4)),
         dict(
@@ -61,7 +61,7 @@ model = dict(
             norm_cfg=dict(type='SyncBN', requires_grad=True),
             num_conv=2,
             upsampling_method='bilinear',
-            align_corners=False,
+            #align_corners=False,
             loss_decode=dict(
                 type='CrossEntropyLoss', use_sigmoid=False, loss_weight=0.4)),
         dict(
@@ -75,7 +75,7 @@ model = dict(
             norm_cfg=dict(type='SyncBN', requires_grad=True),
             num_conv=2,
             upsampling_method='bilinear',
-            align_corners=False,
+            #align_corners=False,
             loss_decode=dict(
                 type='CrossEntropyLoss', use_sigmoid=False, loss_weight=0.4))
     ])
