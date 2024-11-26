@@ -78,7 +78,7 @@ model = dict(
             #align_corners=False,
             loss_decode=dict(
                 type='CrossEntropyLoss', use_sigmoid=False, loss_weight=0.4))
-    ])
+    ]))
 train_cfg = {}
 test_cfg = dict(mode='slide', crop_size=(768, 768), stride=(512, 512))
 dataset_type = 'CustomDataset'
