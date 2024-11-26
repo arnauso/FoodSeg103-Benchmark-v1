@@ -14,7 +14,7 @@ model = dict(
         patch_size=16,
         in_channels=3, #changed
         embed_dims=768,
-        depth=12,
+        #depth=12,
         num_heads=12,
         num_classes=104,
         drop_rate=0.0,
@@ -27,7 +27,7 @@ model = dict(
         channels=512,
         in_index=11,
         img_size=768,
-        embed_dims=768,
+        embed_dims=768, #changed
         num_classes=104,
         norm_cfg=dict(type='SyncBN', requires_grad=True),
         num_conv=2,
@@ -42,7 +42,7 @@ model = dict(
             channels=512,
             in_index=5,
             img_size=768,
-            embed_dims=768,
+            embed_dims=768, #changed
             num_classes=104,
             norm_cfg=dict(type='SyncBN', requires_grad=True),
             num_conv=2,
