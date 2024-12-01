@@ -21,9 +21,11 @@ The project remains unfinished, which prevented testing an architecture on the F
 
 3. **Enable GPU on Kaggle**: In your Kaggle notebook, activate the GPU by navigating to *Settings -> Accelerator* and selecting the GPU option.
 
-4. **The Checkpoints Folder (checkpoints_folder)**: Folder that contains the configuration file of the model. You can find those in the Checkpoints (https://www.kaggle.com/datasets/andreurosca/checkpoints).
-Those configuration files of the models need to be modified, the one in which we have solved more problems is SETR_Naive_768x768_80k_base.py. First of all try to test with the checkpoint downloaded iter_80000.pth respective. Once it works, apply the changes made here to the rest of configuration files.
-In the checkpoints_folder you need to manually put the configuration files of the models extracted from the Checkpoints Kaggle Data Set.
+4. **The Checkpoints Folder (checkpoints_folder)**: The Checkpoints Folder (checkpoints_folder): This folder must contain the configuration files for the models, which can be found in the Checkpoints Kaggle Dataset.
+The configuration file SETR_Naive_768x768_80k_base.py has been the most debugged and is recommended for initial testing with the downloaded checkpoint iter_80000.pth. After verifying it works, apply similar modifications to the other configuration files.
+You need to manually extract and place the configuration files from the Kaggle dataset into the checkpoints_folder.
+
+
 
 ---
 
