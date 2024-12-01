@@ -22,6 +22,11 @@ Please refer our [paper](https://arxiv.org/abs/2105.05409) and our [homepage](ht
 This project is released under the [Apache 2.0 license](LICENSE).
 
 
+## Process of Setting up the Environment (Added by Arnau Soler)
+
+Please refer to [set_up_environment_added.md](set_up_environment_added.md) for setting up the environment in Kaggle and avoid problems.
+
+
 ## Installation
 
 Please refer to [get_started.md](docs/get_started.md#installation) for installation. 
