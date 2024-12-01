@@ -21,6 +21,12 @@ The project remains unfinished, which prevented testing an architecture on the F
 
 3. **Enable GPU on Kaggle**: In your Kaggle notebook, activate the GPU by navigating to *Settings -> Accelerator* and selecting the GPU option.
 
+---
+
+## Installation and Testing Steps
+
+### 1) Create Conda Environment with Python 3.7
+
 ```bash
 #1) Create conda environment with Python 3.7 inside Kaggle
 !conda create -n foodseg python=3.7 -y
