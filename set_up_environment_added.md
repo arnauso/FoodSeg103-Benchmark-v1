@@ -53,6 +53,3 @@ pip install ftfy regex &&  \
 cd FoodSeg103-Benchmark-v1 && python tools/test.py checkpoints_folder/SETR_Naive_768x768_80k_base.py  /kaggle/input/checkpoints/checkpoints/SETR_Naive_ReLeM/iter_80000.pth --eval mIoU
 
 
----
-
-## 
